@@ -1,0 +1,29 @@
+{
+  "name": "aspen-security",
+  "version": "0.0.0",
+  "authors": [
+    "Randall Meeker <randallmeeker@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.0-beta.0",
+    "angular-material": "~1.0.1",
+    "angular-ui-router": "0.2.15",
+    "lodash": "3.9.3",
+    "normalize.css": "3.0.2",
+    "angular-animate": "1.5.0-beta.0",
+    "angular-aria": "1.5.0-beta.0",
+    "angular-messages": "1.5.0-beta.0"
+  },
+  "resolutions": {
+    "angular": "1.5.0-beta.0",
+    "angular-material": "~1.0.1"
+  }
+}

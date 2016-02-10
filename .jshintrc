@@ -1,0 +1,29 @@
+// http://www.jshint.com/docs/options/
+// Comments are allowed in this file but otherwise it should be valid JSON
+// Edits to this file should most likely also be made to `.jshint-for-tests`
+// Run it: `jshint app`
+{
+  // Environment options
+  "devel": true,
+  "esnext": true,
+  "node": true,
+
+  // Relaxing options
+  "asi": true,
+
+  // Stricter options
+  "bitwise": true,
+  "curly": true,
+  "eqeqeq": true,
+  "noarg": true,
+  "nonew": true,
+  "unused": true,
+  "quotmark": "single",
+  "camelcase": true,
+
+  // Global variables
+  "undef": true,
+  "predef": [
+
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "requireClassLiteralsBeforeAttributes": true,
+  "requireIdLiteralsBeforeAttributes": true,
+  "requireLowerCaseAttributes": true,
+  "requireLowerCaseTags": true,
+  "requireSpaceAfterCodeOperator": true,
+  "requireStrictEqualityOperators": true,
+  "validateAttributeQuoteMarks": true,
+  "validateDivTags": true,
+  "validateIndentation": 2,
+  "validateSelfClosingTags": true,
+  "disallowDuplicateAttributes": true
+}

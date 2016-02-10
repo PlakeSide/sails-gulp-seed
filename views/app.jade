@@ -1,0 +1,31 @@
+doctype html
+html( lang="en" ng-app="xSchedule" )
+  head
+    title Aspen Security
+
+    // Viewport mobile tag for sensible mobile support
+    meta( charset="utf-8" )
+    meta( http-equiv="X-UA-Compatible" content="IE=edge" )
+    meta( name="description" content="" )
+    meta( name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" )
+    link( rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,500,700,400italic" )
+    link( rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" )
+    base( href="/" )
+    
+    link( href="/assets/dependencies.css" rel="stylesheet" )
+    link( href="/assets/xSchedule.css" rel="stylesheet" )
+    
+    style [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {display: none !important; }
+
+  body( layout="row" ng-cloak )
+
+    navigation-main
+    .md-whiteframe-z2(flex="", layout="column", tabindex="-1", role="main")
+      md-toolbar.md-whiteframe-z1(layout="row")
+        md-button.menu(hide-gt-md="", ng-click="ul.toggleList()", aria-label="Show User List")
+          md-icon menu
+        h1 Main Application Title
+      md-content#content(flex="" ui-view="")
+        
+    script( src="/assets/dependencies.js" )
+    script( src="/assets/xSchedule.js" )
