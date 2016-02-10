@@ -1,7 +1,6 @@
 var config = require('./build-config')
 var root = config.projectRoot
 var src = config.projectRoot + '/' + config.clientFolder + '/'
-var bower = root + 'bower_components'
 var mainBowerFiles = require('main-bower-files')
 
 var sources = {
@@ -52,7 +51,7 @@ var sources = {
 
 	'gitHooks' : root + 'dev/git-hooks/*',
 
-	'bower' : mainBowerFiles()
+	'bower' : mainBowerFiles('**/*.*', function () { return [] })
 
 }
 
