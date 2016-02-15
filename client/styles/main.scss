@@ -18,7 +18,13 @@ html, body {
 
 md-toolbar h1 {
   margin: auto;
+  font-size: 1.250em;
+  font-weight: 400;
 }
+
+
+
+// Everything here will probably be removed over time.
 
 /* Primary content area */
 
@@ -81,8 +87,7 @@ md-button.menuBtn > md-icon {
 /* Typography support coming in 0.8.0 */
 
 md-toolbar h1 {
-  font-size: 1.250em;
-  font-weight: 400;
+
 }
 
 span.name {
