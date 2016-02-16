@@ -8,7 +8,7 @@
       $urlRouterProvider,
       $uiViewScrollProvider ) {
 
-    $locationProvider.html5Mode( true )
+    $locationProvider.html5Mode( false )
 
     // Allow trailing slash route matching
     $urlMatcherFactoryProvider.strictMode( false )
@@ -31,7 +31,7 @@
     $stateProvider
       .state( 'home',
         componentDirective('/', 'main-dashboard' ) )
-        
+
     console.log('Routes Service running.')
 
   } )
