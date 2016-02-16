@@ -17,14 +17,14 @@ html( lang="en" ng-app="xSchedule" )
     
     style [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {display: none !important; }
 
-  body( layout="row" ng-cloak )
+  body( layout="row" ng-cloak ng-controller="applicationCtrl as app")
 
     navigation-main
     .md-whiteframe-z2(flex="", layout="column", tabindex="-1", role="main")
       md-toolbar.md-whiteframe-z1(layout="row")
-        md-button.menu(hide-gt-md="", ng-click="ul.toggleList()", aria-label="Show User List")
+        md-button.menu(hide-gt-md="", ng-click="app.toggleMainMenu()", aria-label="Show User List")
           md-icon menu
-        h1 Main Application Title
+        h1 Aspen Security Scheduler
       md-content#content(flex="" ui-view="")
         
     script( src="/assets/dependencies.js" )

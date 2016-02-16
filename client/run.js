@@ -1,6 +1,8 @@
 // Run once angular loads
-angular.module( 'xSchedule' ).run( function(  ) {
+(function(){
+  angular.module( 'xSchedule' ).run( function(  ) {
 
-  console.info('Running!!!')
+    console.info('Running!!!')
 
-} )
+  } )
+})()

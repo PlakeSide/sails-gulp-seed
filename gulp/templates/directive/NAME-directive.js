@@ -1,7 +1,7 @@
 // Directive <%= camelName %> TODO
 (function(){
   angular.module( '<%= moduleName %>' )
-    .directive( '<%= camelName %>', () => {
+    .directive( '<%= camelName %>', () <%= camelName %>{
       return {
         templateUrl: '<%= dashedName %>.html',
         scope: {
