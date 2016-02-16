@@ -14,7 +14,23 @@
           // Comment this line out if NO directive variables are set so it will pass linting
           var navigationMain = this;
 
-          navigationMain.test = 'Hello World'
+          navigationMain.items = [
+            {
+              icon: 'today',
+              title: 'Calendar',
+              link: ''
+            },
+            {
+              icon: 'supervisor_account',
+              title: 'Clients',
+              link: ''
+            },
+            {
+              icon: 'face',
+              title: 'Staff',
+              link: ''
+            }
+          ]
 
         }
       }

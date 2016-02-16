@@ -22,7 +22,9 @@ md-toolbar h1 {
   font-weight: 400;
 }
 
-
+.content-wrapper {
+  position: relative;
+}
 
 // Everything here will probably be removed over time.
 
@@ -80,9 +82,7 @@ md-button.menuBtn > md-icon {
 
 /* Utils */
 
-.content-wrapper {
-  position: relative;
-}
+
 
 /* Typography support coming in 0.8.0 */
 
