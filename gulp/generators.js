@@ -13,7 +13,7 @@ var config = require('./build-config'),
     print = require('gulp-print')
 
 
-var moduleName = string(config.projectName).camelize
+var moduleName = string(config.projectName).camelize()
 
 // Where the frontend files are kept
 var appPath = config.clientFolder + '/'
@@ -66,6 +66,7 @@ function copyDirectiveFiles(name, path) {
   props.camelName = string(name).camelize()
   props.destPath = './' + appPath + path + '/' +  props.dashedName
   props.moduleName = moduleName
+  props.templateFolder = !config.jsTemplates ? config.buildAssets + '/templates/' : ''
 
   gulp.src(__dirname + '/templates/directive/*')
     .pipe(template(props))
@@ -81,6 +82,24 @@ function copyDirectiveFiles(name, path) {
   //   .pipe(gulp.dest(props.destPath))
   //   .on('end', done);
 }
+
+function copyComponentFiles(name, path) {
+  var props = {}
+  props.dashedName = string(name).dasherize()
+  props.camelName = string(name).camelize()
+  props.destPath = './' + appPath + path + '/' +  props.dashedName
+  props.moduleName = moduleName
+  props.templateFolder = !config.jsTemplates ? config.buildAssets + '/templates/' : ''
+
+  gulp.src(__dirname + '/templates/component/*')
+    .pipe(template(props))
+    .pipe(rename(function(path) {
+      path.basename = path.basename.replace('NAME', props.dashedName)
+    }))
+    .pipe(print())
+    .pipe(gulp.dest(props.destPath))
+}
+
 
 function copyPageFiles(name, path) {
   var props = {}
@@ -141,5 +160,16 @@ gulp.task('new.service', 'Creates new service from template', function(done) {
   promptForName('service', function (name) {
       var path = 'resources/services'
       copyServiceFiles(name, path, done)
+  })
+})
+
+gulp.task('new.component', 'Creates new component from template', function(done) {
+  //console.log(yargs.argv)
+
+  promptForName('component', function (name) {
+    promptForAppPath(function(path) {
+      console.log('path', path)
+      copyComponentFiles(name, path, done)
+    })
   })
 })

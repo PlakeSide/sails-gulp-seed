@@ -1,9 +1,9 @@
 // Directive <%= camelName %> TODO
 (function(){
   angular.module( '<%= moduleName %>' )
-    .directive( '<%= camelName %>', () <%= camelName %>{
+    .directive( '<%= camelName %>', function() <%= camelName %>{
       return {
-        templateUrl: '<%= dashedName %>.html',
+        templateUrl: '<%= templateFolder %><%= dashedName %>.html',
         scope: {
         },
         link: function( /* $scope, $element, $attributes */ ) {},

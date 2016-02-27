@@ -13,7 +13,8 @@ var config = {
 		buildRoot : projectRoot + buildRoot,
 		buildAssets : projectRoot + buildRoot + '/assets/',
 		clientFolder : 'client',
-		env : process.env.NODE_ENV || 'development'
+		env : process.env.NODE_ENV || 'development',
+		jsTemplates : false // put templates in a js string
 	},
 
 	development : {
