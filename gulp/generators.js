@@ -14,6 +14,7 @@ var config = require('./build-config'),
 
 
 var moduleName = string(config.projectName).camelize()
+var templateFolder = '/assets/templates/'
 
 // Where the frontend files are kept
 var appPath = config.clientFolder + '/'
@@ -66,7 +67,7 @@ function copyDirectiveFiles(name, path) {
   props.camelName = string(name).camelize()
   props.destPath = './' + appPath + path + '/' +  props.dashedName
   props.moduleName = moduleName
-  props.templateFolder = !config.jsTemplates ? config.buildAssets + '/templates/' : ''
+  props.templateFolder = !config.jsTemplates ? templateFolder : ''
 
   gulp.src(__dirname + '/templates/directive/*')
     .pipe(template(props))
@@ -89,7 +90,7 @@ function copyComponentFiles(name, path) {
   props.camelName = string(name).camelize()
   props.destPath = './' + appPath + path + '/' +  props.dashedName
   props.moduleName = moduleName
-  props.templateFolder = !config.jsTemplates ? config.buildAssets + '/templates/' : ''
+  props.templateFolder = !config.jsTemplates ? templateFolder : ''
 
   gulp.src(__dirname + '/templates/component/*')
     .pipe(template(props))

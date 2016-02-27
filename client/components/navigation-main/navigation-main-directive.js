@@ -18,17 +18,17 @@
             {
               icon: 'today',
               title: 'Calendar',
-              link: ''
+              route: 'home'
             },
             {
               icon: 'supervisor_account',
               title: 'Clients',
-              link: ''
+              route: 'home'
             },
             {
               icon: 'face',
               title: 'Staff',
-              link: ''
+              route: 'home'
             }
           ]
 

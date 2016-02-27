@@ -6,7 +6,7 @@
       bindings: { /* attribute bindings are placed here */ },
       templateUrl :  '<%= templateFolder %><%= dashedName %>.html',
       controllerAs : '<%= camelName %>',
-      controller: function(){
+      controller: function (){
         this.name = '<%= camelName %>'
       }
     })

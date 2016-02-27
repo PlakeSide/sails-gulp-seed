@@ -16,7 +16,7 @@
     $uiViewScrollProvider.useAnchorScroll()
 
     // Catchall route
-    $urlRouterProvider.otherwise( '/dashboard' )
+    $urlRouterProvider.otherwise( '/' )
 
     let componentDirective = ( url, name, options ) => {
       return angular.merge({},
