@@ -1,5 +1,5 @@
 {
-  "name": "aspen-security",
+  "name": "sails-gulp-seed",
   "version": "0.0.0",
   "authors": [
     "Randall Meeker <randallmeeker@gmail.com>"
@@ -14,16 +14,12 @@
   ],
   "dependencies": {
     "angular": "1.5.0",
-    "angular-material": "~1.0.5",
+    "angular-material": "~1.0.6",
     "angular-ui-router": "0.2.15",
     "lodash": "3.9.3",
     "normalize.css": "3.0.2",
     "angular-animate": "1.5.0",
     "angular-aria": "1.5.0",
     "angular-messages": "1.5.0"
-  },
-  "resolutions": {
-    "angular": "1.5.0",
-    "angular-material": "~1.0.1"
   }
 }
