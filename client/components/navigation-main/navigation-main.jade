@@ -1,8 +1,0 @@
-md-sidenav.site-sidenav.md-sidenav-left.md-whiteframe-z2(md-component-id="main-navigation-menu", md-is-locked-open="$mdMedia('gt-md')")
-  md-toolbar.md-whiteframe-z1
-    h1 Menu
-  md-list
-    md-list-item(ng-repeat="item in navigationMain.items")
-      md-button( ui-sref="{{item.route}}" )
-        md-icon.menu-icon {{ item.icon }}
-        span.menu-title {{ item.title }}

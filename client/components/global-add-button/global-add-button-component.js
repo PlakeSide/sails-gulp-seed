@@ -1,6 +1,6 @@
 // TODO Directive globalAddButton
 (function(){
-  angular.module( 'xSchedule' )
+  angular.module( 'sails-gulp-seed' )
     .component( 'globalAddButton' , {
       require: { /* required to be in parent controller */ },
       bindings: { /* attribute bindings are placed here */ },

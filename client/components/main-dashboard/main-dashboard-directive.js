@@ -1,6 +1,6 @@
 // Directive mainDashboard TODO
 (function(){
-  angular.module( 'xSchedule' )
+  angular.module( 'sails-gulp-seed' )
     .directive( 'mainDashboard', () => {
       return {
         templateUrl: '/assets/templates/main-dashboard.html',
