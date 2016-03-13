@@ -1,22 +1,13 @@
 // Directive mainDashboard TODO
 (function(){
-  angular.module( 'sails-gulp-seed' )
-    .directive( 'mainDashboard', () => {
-      return {
-        templateUrl: '/assets/templates/main-dashboard.html',
-        scope: {
-        },
-        link: function( /* $scope, $element, $attributes */ ) {},
+  angular.module( 'C3PO' )
+    .component( 'mainDashboard', {
+        templateUrl: 'assets/templates/main-dashboard.html',
+        require: { /* required to be in parent controller */ },
+        bindings: { /* attribute bindings are placed here */ },
         controllerAs: 'mainDashboard',
-        bindToController: true,
         controller: function( ) {
-          // Instead of using scope, you should reference the variable 'mainDashboard'
-          // Comment this line out if NO directive variables are set so it will pass linting
-          var mainDashboard = this;
-
-          mainDashboard.test = 'Hello World'
-
-        }
+          this.test = 'Hello World'
       }
   } )
 })()

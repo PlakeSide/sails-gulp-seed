@@ -14,7 +14,7 @@ var config = require('./build-config'),
 
 
 var moduleName = string(config.projectName).camelize()
-var templateFolder = '/assets/templates/'
+var templateFolder = 'assets/templates/'
 
 // Where the frontend files are kept
 var appPath = config.clientFolder + '/'

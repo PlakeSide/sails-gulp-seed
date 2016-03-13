@@ -1,38 +1,31 @@
 // Directive navigationMain TODO
 (function(){
-  angular.module( 'sails-gulp-seed' )
-    .directive( 'mainNavigation', () => {
-      return {
-        templateUrl: '/assets/templates/navigation-main.html',
-        scope: {
-        },
-        link: function( /* $scope, $element, $attributes */ ) {},
-        controllerAs: 'navigationMain',
-        bindToController: true,
-        controller: function( ) {
-          // Instead of using scope, you should reference the variable 'navigationMain'
-          // Comment this line out if NO directive variables are set so it will pass linting
-          var navigationMain = this;
+  angular.module( 'C3PO' )
+    .component( 'mainNavigation', {
+      templateUrl: 'assets/templates/navigation-main.html',
+      // require: { /* required to be in parent controller */ },
+      // bindings: { /* attribute bindings are placed here */ },
+      controllerAs: 'navigationMain',
+      controller: function( ) {
 
-          navigationMain.items = [
-            {
-              icon: 'today',
-              title: 'Calendar',
-              route: 'home'
-            },
-            {
-              icon: 'supervisor_account',
-              title: 'Clients',
-              route: 'home'
-            },
-            {
-              icon: 'face',
-              title: 'Staff',
-              route: 'home'
-            }
-          ]
+        this.items = [
+          {
+            icon: 'today',
+            title: 'Calendar',
+            route: 'home'
+          },
+          {
+            icon: 'supervisor_account',
+            title: 'Clients',
+            route: 'home'
+          },
+          {
+            icon: 'face',
+            title: 'Staff',
+            route: 'home'
+          }
+        ]
 
-        }
-      }
+    }
   } )
 })()
