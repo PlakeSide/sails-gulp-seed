@@ -1,6 +1,6 @@
 // TODO Directive <%= camelName %>
 (function(){
-  angular.module( '<%= moduleName %>' )
+  angular.module( 'PrimaryApp' )
     .component( '<%= camelName %>' , {
       // require: { /* required to be in parent controller */ },
       // bindings: { /* attribute bindings are placed here */ },

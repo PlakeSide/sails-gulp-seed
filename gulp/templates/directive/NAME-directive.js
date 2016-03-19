@@ -1,6 +1,6 @@
 // Directive <%= camelName %> TODO
 (function(){
-  angular.module( '<%= moduleName %>' )
+  angular.module( 'PrimaryApp' )
     .directive( '<%= camelName %>', function() <%= camelName %>{
       return {
         templateUrl: '<%= templateFolder %><%= dashedName %>.html',

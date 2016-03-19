@@ -1,6 +1,6 @@
 // TODO Directive globalAddButton
 (function(){
-  angular.module( 'sails-gulp-seed' )
+  angular.module( 'PrimaryApp' )
     .component( 'globalAddButton' , {
       // require: { /* required to be in parent controller */ },
       // bindings: { /* attribute bindings are placed here */ },

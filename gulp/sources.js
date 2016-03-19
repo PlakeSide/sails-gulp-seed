@@ -3,6 +3,11 @@ var root = config.projectRoot
 var src = config.projectRoot + '/' + config.clientFolder + '/'
 var mainBowerFiles = require('main-bower-files')
 
+var bowerFiles = mainBowerFiles('**/*.*', function () { return [] })
+
+// ADD ANGULAR 2.0 ROUTER via node modules
+bowerFiles.push('./node_modules/@angular/router/angular1/angular_1_router.js')
+
 var sources = {
 
 	'scripts' : [
@@ -51,7 +56,7 @@ var sources = {
 
 	'gitHooks' : root + 'dev/git-hooks/*',
 
-	'bower' : mainBowerFiles('**/*.*', function () { return [] })
+	'bower' : bowerFiles
 
 }
 

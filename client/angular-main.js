@@ -2,6 +2,6 @@
 (function(){
   angular.module( 'xSchedule', [
     'ngMaterial',
-    'ui.router'
+    'ngComponentRouter'
   ] )
 })()
